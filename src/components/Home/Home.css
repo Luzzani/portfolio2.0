@@ -113,8 +113,15 @@ h3 {
         font-size: var(--font-size-h3-sm);
     }
 
+
+
     .home__container-content {
         margin-top: 3rem;
     }
 
+    
+.home__container-image {
+    position: relative;
+    z-index: -1;
+}
 }
