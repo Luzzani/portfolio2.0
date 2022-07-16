@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+:root {
+    --color-bg:#2a003d ;
+    --color-bg-variant: #4d1d4d; 
+    --color-bg-contrast: #88d378;
+    
+    --color-light: rgba(255, 255, 255, 0.6); ; 
+    --color-white:#fff ; 
+    --color-black: #000; 
+
+    --font-size-h1: 5rem;
+    --font-size-h2: 2.5rem;
+    --font-size-h3: 2rem;
+    --font-size-p: 1.2rem;
+    
+    --font-size-h1-md: 3rem;
+    --font-size-h2-md: 2rem;
+    --font-size-h3-md: 1.2rem;
+    --font-size-p-md: 1rem;
+    
+    --font-size-h1-sm: 1.9rem;
+    --font-size-h2-sm: 1.5rem;
+    --font-size-h3-sm: 1rem;
+
+    --container-width-lg: 75%;
+    --container-width-md: 86%;
+    --container-width-sm: 90%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    display: none;    
+}
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    background: linear-gradient( 20deg, rgba(0, 0, 0, 0.923), rgb(42, 0, 61) ,rgba(0, 0, 0, 0.923));
+    color: var(--color-white);
+}
+
+
+/* ------------- GENERAL STYLES ------------- */
+
+.container {
+    width: var(--container-width-lg);
+    margin: 0 auto;
+}
+
+/* ------------- MEDIA QUERIES (MEDIUM DEVICES) ------------- */
+
+@media screen and (max-width: 1024px) {
+    .container {
+      width: var(--container-width-md);
+    }
+  }
+  
+  /* ------------- MEDIA QUERIES (SMALL DEVICES) ------------- */
+  
+  @media screen and (max-width: 600px) {
+    .container {
+      width: var(--container-width-sm);
+    }
+  }
+  

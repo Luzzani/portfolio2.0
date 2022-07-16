@@ -1,0 +1,120 @@
+.home__container {
+    margin-top: 4rem;
+    height: 93vh;
+}
+
+.home__container h1,
+h3 {
+    color: var(--color-bg-contrast);
+    text-align: center;
+}
+
+.home__container h1 {
+    font-size: var(--font-size-h1);
+    font-weight: 500;
+}
+
+.home__container h3 {
+    color: var(--color-light);
+    font-size: var(--font-size-h3)
+}
+
+.home__container-content {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+}
+
+.home__container-image {
+    background-image: url(../../assets/img/foto3.jpg);
+    background-size: cover;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    width: 300px;
+    height: 350px;
+    transition: .6s ease;
+}
+
+.home__container-image:hover {
+    background-image: url(../../assets/img/foto4.jpg);
+    transform: rotateY(180deg);
+}
+
+.home__container-text p {
+    font-size: var(--font-size-p);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.home__container-text a {
+    color: var(--color-bg-contrast);
+    text-decoration: none;
+}
+
+/* ------------- MEDIA QUERIES (MEDIUM DEVICES) ------------- */
+
+@media screen and (max-width: 1024px) {
+
+    .home__container {
+        margin-top: 2rem;
+        height: 96vh;
+    }
+
+    .home__container-image {
+        background-position-y: -70px;
+        width: 300px;
+        height: 300px;
+        transition: .6s ease;
+    }
+
+    .home__container h1 {
+        font-size: var(--font-size-h1-md);
+    }
+
+    .home__container h3 {
+        font-size: var(--font-size-h3-md);
+    }
+
+    .home__container-content {
+        margin-top: 2rem;
+        flex-direction: column;
+        gap: 2rem;
+
+    }
+
+    .home__container-text p {
+        font-size: var(--font-size-p-md)
+    }
+
+}
+
+
+
+
+/* ------------- MEDIA QUERIES (SMALL DEVICES) ------------- */
+
+
+@media screen and (max-width: 600px) {
+
+    .home__container {
+        height: 100vh;
+        margin-top: .5rem;
+    }
+
+    .home__container h1 {
+        font-size: var(--font-size-h1-sm);
+    }
+
+    .home__container h3 {
+        font-size: var(--font-size-h3-sm);
+    }
+
+    .home__container-content {
+        margin-top: 3rem;
+    }
+
+}
