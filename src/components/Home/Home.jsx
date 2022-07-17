@@ -61,7 +61,7 @@ function Home() {
         />
         <div className="home__container-text">
           <motion.p variants={container} initial="hidden" animate="show">
-            Hola! Este es mi portafolios, y en el vas a poder{" "}
+            Hola! Te presento mi portafolio y en el vas a poder{" "}
             <motion.strong variants={strong} whileHover={{ scale: 1.1 }}>
               <Link to="about">conocerme un poco,</Link>
             </motion.strong>

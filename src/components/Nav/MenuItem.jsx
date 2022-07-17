@@ -22,9 +22,14 @@ const variants = {
 const text = ["Inicio", "Sobre Mi", "Proyectos", "Contacto"];
 const path = ["/", "about", "proyect", "contact"];
 
-const MenuItem = ({ i }) => {
+const MenuItem = ({ i, toggle }) => {
+  const handleToggle =()=>{
+    toggle();
+  }
+
   return (
     <motion.li
+    onClick={handleToggle}
       variants={variants}
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
